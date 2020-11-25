@@ -36,7 +36,7 @@ public class CandyTest {
 
         // Then
 
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("Candy message test", expected, actual);
 
 
     }
