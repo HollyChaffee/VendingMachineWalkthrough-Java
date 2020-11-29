@@ -10,8 +10,8 @@ public class CandyTest {
     @Test
     public void candyConstructorTest() {
         //Given
-        String name = "Reese's Peanut Butter Cup";
-        Double price = 0.88;
+        String name = "Justin's Peanut Butter Cup";
+        Double price = 1.95;
         Candy candy = new Candy(name, price);
 
         //When
@@ -26,8 +26,8 @@ public class CandyTest {
     @Test
     public void candyMessageTest(){
         //Given
-        String name = "Reese's Peanut Butter Cup";
-        Double price = 0.88;
+        String name = "Justin's Peanut Butter Cup";
+        Double price = 1.95;
         Candy candy = new Candy(name, price);
 
         // When
