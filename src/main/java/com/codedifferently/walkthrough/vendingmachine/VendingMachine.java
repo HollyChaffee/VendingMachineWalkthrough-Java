@@ -5,7 +5,8 @@ import com.codedifferently.walkthrough.vendingmachine.inventory.Candy;
 import com.codedifferently.walkthrough.vendingmachine.inventory.Chips;
 import com.codedifferently.walkthrough.vendingmachine.inventory.Drinks;
 import com.codedifferently.walkthrough.vendingmachine.inventory.Product;
-import org.apache.logging.log4j.core.util.IOUtils;
+import org.apache.commons.io.IOUtils;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,8 +21,7 @@ public class VendingMachine {
         this.scan = new Scanner(System.in);
         this.inventory = new HashMap<>();
     }
-
-    public void init(){
+    private void init() {
         try {
             String output = readRawDataToString();
             String[] products = output.split("\n");
@@ -30,6 +30,14 @@ public class VendingMachine {
             e.printStackTrace();
         }
     }
+
+    public String readRawDataToString()throws Exception{
+        ClassLoader classLoader = getClass().getClassLoader();
+        String result = IOUtils.toString(classLoader.getResourceAsStream("inventory2.txt"));
+        return result;
+    }
+
+
     private Product makeProductFromString(String[] productData){
         Product product = null;
         String type = productData[3];
@@ -59,16 +67,11 @@ public class VendingMachine {
             Product item = makeProductFromString(productData);
             inventory.put(key, item);
         }
-    }
-    private String readRawDataToString() throws Exception{
-        ClassLoader classLoader = getClass().getClassLoader();
-        String result = IOUtils.toString(classLoader.getResourceAsStream("inventory.txt"));
-        return result;
 
     }
     public void start() {
-        init();
-        System.out.println("Welcome to the Vending Machine");
+
+        System.out.println("Welcome to Snack Healthy Vending!");
         boolean flag = true;
         ArrayList<String> options = new ArrayList<>();
         options.add("(1) Display Vending Machine Items");

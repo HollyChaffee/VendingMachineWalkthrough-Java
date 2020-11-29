@@ -1,4 +1,4 @@
-A1 | Justin's Peanut Butter cup | 1.95 | Candy
-A2 | Hint Water Watermelon | 1.15 | Drinks
-A3 | Skinny Pop Sea Salt Chips | 1.80 | Chips
-A4 | Pur Gum | 1.50 | Gum
+A1|Justin's Peanut Butter cup|1.95|Candy
+A2|Hint Water Watermelon|1.15|Drinks
+A3|Skinny Pop Sea Salt Chips|1.80|Chips
+A4|Pur Gum|1.50|Gum
