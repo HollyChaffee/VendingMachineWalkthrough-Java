@@ -12,7 +12,7 @@ public class Gum extends Product{ //Publicly accessed class named Gum which exte
     }
 
     public Gum(){ //Default constructor of Object Gum with no arguments
-        this("Rhino Chew", 0.0); //Two default values are set here:
+        this("Peppermint Chew", 0.0); //Two default values are set here:
         // one for the name-"Rhino Chew" and one for the price-0.0
     }
 

@@ -12,13 +12,13 @@ public class GumTest { //This is a public (accessed) class named GumTest
     // used can run as a test case
     public void constructorTest(){ //A test method called constructorTest created to call on the Gum Class.
         // Given
-        String name = "Big Red"; //Name referencing a type String setting it to the string "Big Red"
-        Double price = 0.25;
+        String name = "Pur Gum"; //Name referencing a type String setting it to the string "Pur Gum"
+        Double price = 1.50;
         Gum gumRef = new Gum(name, price); //gumRef is referencing type Gum, pointing to the new gum object.
         // The new operator is followed by a call to the constructor, which initializes the new object of Gum.
 
         // When
-        String expected = "Big Red 0.25";
+        String expected = "Pur Gum 1.50";
         String actual = gumRef.toString();
         // Then
         Assert.assertEquals("Constructor test",expected, actual); //Asserts that two objects are equal.

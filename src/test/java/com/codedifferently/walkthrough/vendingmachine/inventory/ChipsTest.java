@@ -9,8 +9,8 @@ public class ChipsTest {
     @Test
     public void chipsConstructorTest() {
         //Given
-        String name = "Cassava Flour Tortilla Chips";
-        Double price = 2.50;
+        String name = "Skinny Pop Sea Salt Chips";
+        Double price = 1.80;
         Chips chips = new Chips(name, price);
 
         //When
@@ -25,8 +25,8 @@ public class ChipsTest {
     @Test
     public void chipsMessageTest() {
         //Given
-        String name = "Cassava Flour Tortilla Chips";
-        Double price = 2.50;
+        String name = "Skinny Pop Sea Salt Chips";
+        Double price = 1.80;
         Chips chips = new Chips(name, price);
 
         // When
